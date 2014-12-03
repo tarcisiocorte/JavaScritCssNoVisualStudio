@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<style>
+    .bloquerElemento {
+        
+    }
+</style>
+
+<script src="../_layouts/15/Scripts/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var numeroSolicitacao = $("[title='Número da Solicitação']");
+        numeroSolicitacao.attr('disabled', 'disabled');
+
+        var statusSolicitacao = $("[title='Status da Solicitação']");
+        statusSolicitacao.attr('disabled', 'disabled');
+    });
+</script>
+
+<b />
+
+<input type="text" title="Número da Solicitação" value="teste xxxx" />
+<br /><br /><br />
+
+<input type="text" title="Status da Solicitação" disabled />

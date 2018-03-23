@@ -136,8 +136,13 @@ function validation(){
     }else{
         return 1;
     }
+}
 
-
+function deleteList(){
+    if(confirm("Delete this list?")){
+        list = [];
+        setList(list);
+    }
 }
 
 
